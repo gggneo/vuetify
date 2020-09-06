@@ -14,6 +14,8 @@
 
     <default-snackbar />
 
+    <default-pwa-snackbar />
+
     <default-settings />
   </v-app>
 </template>
@@ -37,6 +39,10 @@
       DefaultBar: () => import(
         /* webpackChunkName: "default-app-bar" */
         './AppBar'
+      ),
+      DefaultPwaSnackbar: () => import(
+        /* webpackChunkName: "default-pwa-snackbar" */
+        './PwaSnackbar'
       ),
       DefaultSystemBar: () => import(
         /* webpackChunkName: "default-system-bar" */
